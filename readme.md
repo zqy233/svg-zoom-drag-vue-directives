@@ -18,6 +18,10 @@ This is achieved by adjusting the viewbox attribute of the SVG.
 
 ## Usage
 
+```sh
+npm i -s svg-zoom-drag-vue-directives
+```
+
 Vue2
 
 ```ts
