@@ -4,7 +4,15 @@
 
 第一个指令允许用户使用鼠标滚轮控制 SVG 图像的缩放。
 
-第二个指令允许用户通过按住鼠标并移动光标来拖动 SVG 图像。这是通过调整 SVG 的 viewbox 属性实现的。
+第二个指令允许用户通过按住鼠标并移动光标来拖动 SVG 图像。
+
+这是通过调整 SVG 的 viewbox 属性实现的。
+
+## demo
+
+> github pages: https://zqy233.github.io/svg-zoom-drag-vue-demo/#/
+
+> code: https://github.com/zqy233/svg-zoom-drag-vue-demo
 
 ## 用法
 

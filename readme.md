@@ -1,4 +1,6 @@
-# Custom vue directives
+# EN/[中文](https://github.com/zqy233/svg-zoom-drag-vue-directives/blob/master/readme-zh.md)
+
+## Custom vue directives
 
 Provide two Vue custom directives that are compatible with Vue 2 and Vue 3.
 
@@ -7,6 +9,12 @@ The first directive allows the user to control the zoom in and out of an SVG ima
 The second directive allows the user to drag the SVG image by holding down the mouse and moving the cursor.
 
 This is achieved by adjusting the viewbox attribute of the SVG.
+
+## demo
+
+> github pages: https://zqy233.github.io/svg-zoom-drag-vue-demo/#/
+
+> code: https://github.com/zqy233/svg-zoom-drag-vue-demo
 
 ## Usage
 

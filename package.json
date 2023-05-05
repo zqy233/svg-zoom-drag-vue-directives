@@ -1,13 +1,35 @@
 {
   "name": "svg-zoom-drag-vue-directives",
-  "version": "1.0.1",
-  "main": "dist/index.min.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
+  "author": "zqy233",
+  "version": "1.0.5",
+  "typings": "./dist/index.d.ts",
+  "main": "./dist/index.min.js",
+  "module": "./dist/index.esm.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.min.js",
+      "require": "./dist/index.esm.js"
+    }
+  },
   "files": [
     "dist"
   ],
+  "keywords": [
+    "vue",
+    "vue directives",
+    "svg drag",
+    "svg zoom"
+  ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zqy233/svg-zoom-drag-vue-directives.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zqy233/svg-zoom-drag-vue-directives/issues"
+  },
+  "homepage": "https://github.com/zqy233/svg-zoom-drag-vue-directives",
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.0",
     "rollup-plugin-delete": "^2.0.0",
