@@ -1,4 +1,4 @@
-# Custom vue directive
+# Custom vue directives
 
 Provide two Vue custom directives that are compatible with Vue 2 and Vue 3.
 
