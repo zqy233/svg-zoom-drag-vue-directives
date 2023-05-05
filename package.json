@@ -1,0 +1,20 @@
+{
+  "name": "svg-zoom-drag-vue-directives",
+  "version": "1.0.1",
+  "main": "dist/index.min.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.5.0"
+  },
+  "dependencies": {
+    "vue-demi": "^0.14.0"
+  }
+}
