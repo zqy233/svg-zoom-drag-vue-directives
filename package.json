@@ -1,7 +1,7 @@
 {
   "name": "svg-zoom-drag-vue-directives",
   "author": "zqy233",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "typings": "./dist/index.d.ts",
   "main": "./dist/index.min.js",
   "module": "./dist/index.esm.js",

@@ -1,6 +1,7 @@
 import { Vue2 } from "vue-demi";
+import { App } from "vue";
 /** Control the zoom in and out of an SVG image by setting the viewbox attribute of the SVG element. The third parameter of the viewbox controls the horizontal size, while the fourth parameter sets the vertical size. */
-export function svgWheel(app: typeof Vue2) {
+export function svgWheel(app: typeof Vue2 | App<Element>) {
   app.directive("svgWheel", (el: HTMLElement) => {
     if (el) {
       el.onwheel = (e: WheelEvent) => {
@@ -24,7 +25,7 @@ export function svgWheel(app: typeof Vue2) {
 }
 
 /** Control the drag of an SVG image by setting the "viewBox" attribute of the SVG element. The first parameter of "viewBox" controls the left-right position, and the second parameter sets the up-down position. */
-export function svgDrag(app: typeof Vue2) {
+export function svgDrag(app: typeof Vue2 | App<Element>) {
   app.directive("svgDrag", (el: HTMLElement) => {
     let clientX = 0; // The last x-axis position of the mouse
     let clientY = 0; // The last y-axis position of the mouse
