@@ -1,6 +1,10 @@
-import { Vue2 } from "vue-demi";
-import { App } from "vue";
-/** Control the zoom in and out of an SVG image by setting the viewbox attribute of the SVG element. The third parameter of the viewbox controls the horizontal size, while the fourth parameter sets the vertical size. */
+import { Vue2, App } from "vue-demi";
+
+/** create a `v-svgWheel` directive for a Vue app, allows the user to control the zoom in and out of an SVG image using the mouse wheel. */
+export function svgWheel(app: typeof Vue2): void;
+/** create a `v-svgWheel` directive for a Vue app, allows the user to control the zoom in and out of an SVG image using the mouse wheel. */
+export function svgWheel(app: App<Element>): void;
+// Control the zoom in and out of an SVG image by setting the viewbox attribute of the SVG element. The third parameter of the viewbox controls the horizontal size, while the fourth parameter sets the vertical size.
 export function svgWheel(app: typeof Vue2 | App<Element>) {
   app.directive("svgWheel", (el: HTMLElement) => {
     if (el) {
@@ -24,7 +28,13 @@ export function svgWheel(app: typeof Vue2 | App<Element>) {
   });
 }
 
-/** Control the drag of an SVG image by setting the "viewBox" attribute of the SVG element. The first parameter of "viewBox" controls the left-right position, and the second parameter sets the up-down position. */
+/** create a `v-svgDrag` directive for a Vue app, allows the user to drag the SVG image by holding down the mouse and moving the cursor.
+ */
+export function svgDrag(app: typeof Vue2): void;
+/** create a `v-svgDrag` directive for a Vue app, allows the user to drag the SVG image by holding down the mouse and moving the cursor.
+ */
+export function svgDrag(app: App<Element>): void;
+// Control the drag of an SVG image by setting the "viewBox" attribute of the SVG element. The first parameter of "viewBox" controls the left-right position, and the second parameter sets the up-down position.
 export function svgDrag(app: typeof Vue2 | App<Element>) {
   app.directive("svgDrag", (el: HTMLElement) => {
     let clientX = 0; // The last x-axis position of the mouse
