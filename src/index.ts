@@ -28,11 +28,9 @@ export function svgWheel(app: typeof Vue2 | App<Element>) {
   });
 }
 
-/** create a `v-svgDrag` directive for a Vue app, allows the user to drag the SVG image by holding down the mouse and moving the cursor.
- */
+/** create a `v-svgDrag` directive for a Vue app, allows the user to drag the SVG image by holding down the mouse and moving the cursor. */
 export function svgDrag(app: typeof Vue2): void;
-/** create a `v-svgDrag` directive for a Vue app, allows the user to drag the SVG image by holding down the mouse and moving the cursor.
- */
+/** create a `v-svgDrag` directive for a Vue app, allows the user to drag the SVG image by holding down the mouse and moving the cursor. */
 export function svgDrag(app: App<Element>): void;
 // Control the drag of an SVG image by setting the "viewBox" attribute of the SVG element. The first parameter of "viewBox" controls the left-right position, and the second parameter sets the up-down position.
 export function svgDrag(app: typeof Vue2 | App<Element>) {
