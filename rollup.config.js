@@ -7,9 +7,7 @@ export default {
   output: [
     {
       file: "./dist/index.min.js",
-      format: "umd",
-      name: "svgZoomDragVueDirectives",
-      exports: "named",
+      format: "cjs",
     },
     {
       file: "./dist/index.esm.js",
